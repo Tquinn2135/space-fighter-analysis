@@ -6,6 +6,7 @@
 
 void Level01::LoadContent(ResourceManager& resourceManager)
 {
+	std::cout << "Level 01\n";//level indication in the console
 	// Setup enemy ships
 	Texture *pTexture = resourceManager.Load<Texture>("Textures\\BioEnemyShip.png");
 

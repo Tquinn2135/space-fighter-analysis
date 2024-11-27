@@ -19,7 +19,7 @@ public:
 
 	/** @brief Instantiate a gameplay screen object.
 		@param levelIndex The index of the level to load. */
-	GameplayScreen(const int levelIndex = 0);
+	GameplayScreen(const int levelIndex = 1);			// change to level02 
 	virtual ~GameplayScreen() { }
 
 	/** @brief Load the content for the screen.

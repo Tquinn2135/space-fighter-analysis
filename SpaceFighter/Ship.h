@@ -52,7 +52,7 @@ public:
 
 	/** @brief Gets the speed of the ship.
 		@return Returns the speed of the ship. */
-	virtual float GetSpeed() const { return m_speed; }
+	virtual float GetSpeed() const { return m_speed;}
 
 	/** @brief Sets the speed of the ship.
 		@param speed The speed of the ship. */

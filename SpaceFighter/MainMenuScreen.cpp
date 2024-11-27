@@ -36,7 +36,7 @@ void MainMenuScreen::LoadContent(ResourceManager& resourceManager)
 		pItem = new MenuItem(text[i]);
 		pItem->SetPosition(Vector2(100, 100 + 50 * i));
 		pItem->SetFont(pFont);
-		pItem->SetColor(Color::BLUE);
+		pItem->SetColor(Color::GREEN);
 		pItem->SetSelected(i == 0);
 		AddMenuItem(pItem);
 	}
@@ -62,7 +62,7 @@ void MainMenuScreen::Update(const GameTime& gameTime)
 	{
 		pItem->SetAlpha(alpha);
 		isSelected = pItem->IsSelected();
-		pItem->SetColor(isSelected ? Color::WHITE : Color::BLUE);
+		pItem->SetColor(isSelected ? Color::RED : Color::GREEN); //Christmas colors!
 		pItem->SetTextOffset(isSelected ? Vector2::UNIT_X * offset : Vector2::ZERO);
 	}
 

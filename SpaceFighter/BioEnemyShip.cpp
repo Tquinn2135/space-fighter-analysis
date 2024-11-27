@@ -15,7 +15,7 @@ void BioEnemyShip::Update(const GameTime& gameTime)
 {
 	if (IsActive())
 	{
-		float x = sin(gameTime.GetTotalTime() * Math::PI + GetIndex());
+		float x = sin(gameTime.GetTotalTime() * Math::PI_OVER2 + GetIndex()); // added PI_OVER2 To spread out the enemy ships movement
 		x *= GetSpeed() * gameTime.GetElapsedTime() * 1.4f;
 		TranslatePosition(x, GetSpeed() * gameTime.GetElapsedTime());
 
